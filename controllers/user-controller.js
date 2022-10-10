@@ -33,10 +33,10 @@ const userController = {
     createUser({ body }, res) {
         User.create(body)
             .then(dbSocialData => res.json(dbSocialData))
-            .catch(err => res.json(err))
+            .catch(err => res.json(err));
     },
 
-    updateUser({ paras, body }, res) {
+    updateUser({ params, body }, res) {
         User.findOneAndUpdate({ _id: params.id }, body, {
             new: true,
             runValidators: true

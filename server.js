@@ -18,5 +18,7 @@ mongoose.connect(
   }
 );
 
+mongoose.set('debug', true);
+
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

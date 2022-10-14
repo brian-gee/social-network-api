@@ -1,4 +1,4 @@
-const { Thought } = require('../models');
+const { Thought, User } = require('../models');
 
 const thoughtController = {
     getAllThought(req, res) {
@@ -86,7 +86,7 @@ const thoughtController = {
                 res.json(dbSocialData);
             })
             .catch(err => res.json(err));
-    }
+    },
 }
 
 module.exports = thoughtController;

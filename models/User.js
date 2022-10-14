@@ -1,4 +1,6 @@
 const { Schema, model } = require('mongoose');
+const validator = require('validator');
+const { validate } = require('./Thought');
 
 const UserSchema = new Schema(
     {
@@ -12,8 +14,11 @@ const UserSchema = new Schema(
             type: String,
             unique: true,
             required: true,
-            trim: true,
-            // validate: []
+            validate:{
+                validator: validator.isEmail,
+                message: '{VALUE} is not a valid email',
+                isAsync: false
+            }
         },
         thoughts:[
             {

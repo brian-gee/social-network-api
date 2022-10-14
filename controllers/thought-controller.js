@@ -78,9 +78,15 @@ const thoughtController = {
             { _id: params.thoughtId},
             {$pull: {reactions: params.thoughtId}},
             {new: true})
-            .then(dbSocialData => res.json(dbSocialData))
-            .catch(err => res.json(err))
+            .then(dbSocialData => {
+                if(!dbSocialData) {
+                    res.status(404).json({ message: 'No thought found with this id'});
+                    return;
+                }
+                res.json(dbSocialData);
+            })
+            .catch(err => res.json(err));
     }
-};
+}
 
 module.exports = thoughtController;

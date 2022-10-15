@@ -1,8 +1,6 @@
 # Social Network API
 
-Saw a movie recently and want to sound-off? Screenie Meanie is a platform where you can tell us about movies you hate to love or love to hate!
-
-We put all the movies you watched into your profile.  You can tell your friends how you really feel about movies you watched, link to it and a movie poster, and upvote and comment on friends reviews.
+This is a social media network API example using ExpressJS and Mongoose for MongoDB database to store user information, thoughts, friends, and reactions.
 
 ## Authors
 

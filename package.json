@@ -19,6 +19,7 @@
   "homepage": "https://github.com/brian-gee/social-network-api#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "mongoose": "^6.6.5"
+    "mongoose": "^6.6.5",
+    "validator": "^13.7.0"
   }
 }

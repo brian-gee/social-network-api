@@ -17,6 +17,7 @@ video link goes here
 #### Screenshots
 add screenshots here
 
+![social-media-api](https://user-images.githubusercontent.com/39035211/196082527-959b4096-4d07-4393-a49a-5eefe734d9b1.png)
 
 ## Run Locally
 

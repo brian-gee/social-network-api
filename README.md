@@ -13,7 +13,8 @@ This is a social media network API example using ExpressJS and Mongoose for Mong
 
 
 #### Video
-video link goes here
+[Link to demo video](https://drive.google.com/file/d/1XFs6m9qjhumlu1zQUIHPfCKbdaJpJmZq/view?usp=sharing)
+
 #### Screenshots
 
 ![social-media-api](https://user-images.githubusercontent.com/39035211/196082527-959b4096-4d07-4393-a49a-5eefe734d9b1.png)
